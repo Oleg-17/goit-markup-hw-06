@@ -602,6 +602,61 @@ header.container, {
   background-image: url("../images/icon.svg/linkedin11.svg");
 }
 
+.subscription {
+  margin-left: 93px;
+}
+
+.subscription-form {
+  margin-top: 20px;
+}
+
+.subscription-form .subscription-input {
+  background-color: transparent;
+}
+
+.subscription-input {
+  padding: 15px;
+  width: 358px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-family: inherit;
+  color: var(--white-text);
+}
+
+.tu {
+  position: relative;
+  display: inline-flex;
+}
+
+.subscription-button {
+  margin-left: 12px;
+  padding: 10px 62px 10px 29px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--white-text);
+  background-color: var(--blu-text);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+
+.svgsend {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  right: 10px;
+  transform: translate(-50%,-50%);
+  
+  fill: currentColor;
+}
+
 .cards {
   padding-top: 94px;
   padding-bottom: 120px;
@@ -797,14 +852,140 @@ header.container, {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-form {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  max-width: 448px;
+  
+}
+
+.modal-form.input:hover {
+  border-color: currentColor;
+}
+
 .close {
   position: absolute;
-  margin-top: 8px;
-  margin-right: 8px;
-  right: 0;
+  top: 8px;
+  left: 485px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 50%;
   width: 30px;
   height: 30px;
-  background-image: url("../images/icon.svg/close-modal.svg");
-  background-position: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form .border-close .svg-close {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.close:focus,
+.close:hover {
+  color: var(--blu-text);
+}
+
+.svg-close {
+  fill: currentColor;  
+}
+
+.modal-form .close +.svg-close {
+  position: absolute;
+}
+
+.name-grup {
+  width: 100%;
+  margin-top: 40px;
+  margin-left: 35px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+
+}
+
+.grup {
+  margin-left: 35px;
+  margin-top: 10px;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.label-grup {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.01em;
+  color: var(--grey-text);
+}
+
+.modal-form .input {
+  width: 100%;
+  padding: 11px;
+  padding-left: 30px;
+  font-family: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form .input:hover{
+  border-color: var(--blu-text);
+}
+
+.modal-form .xlkkkl {
+  position: relative;
+ 
+}
+
+.modal-form .iconblack {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form .input:hover + .iconblack {
+  fill: var(--blu-text);
+}
+
+.modal .modal-form .form-submit {
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--white-text);
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  width: 200px;
+  height: 50px;
+  background-color: var(--blu-text);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+
+.dsdsds {
+  width: 100%;
+
+  font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+color: var(--grey-text);
+/* identical to box height, or 171% */
+
+letter-spacing: 0.03em;
 }
 
