@@ -914,6 +914,7 @@ header.container, {
   flex-direction: column;
 }
 
+
 .label-grup {
   font-style: normal;
   font-weight: 400;
@@ -922,12 +923,13 @@ header.container, {
 
   letter-spacing: 0.01em;
   color: var(--grey-text);
+  
 }
 
 .modal-form .input {
   width: 100%;
   padding: 11px;
-  padding-left: 30px;
+  padding-left: 16px;
   font-family: inherit;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -939,7 +941,7 @@ header.container, {
   border-color: var(--blu-text);
 }
 
-.modal-form .xlkkkl {
+.modal-form .inputblack {
   position: relative;
  
 }
@@ -958,6 +960,8 @@ header.container, {
 }
 
 .modal .modal-form .form-submit {
+  margin-top: 30px;
+  margin-left: 159px;
 
   font-style: normal;
   font-weight: 700;
@@ -976,16 +980,42 @@ header.container, {
   border: none;
 }
 
-.dsdsds {
-  width: 100%;
-
+.modal-form textarea {
+  display: flex;
+  padding: 12px 16px;
   font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 24px;
-color: var(--grey-text);
-/* identical to box height, or 171% */
-
-letter-spacing: 0.03em;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 }
+
+textarea {
+  resize: none;
+}
+
+.end-grup {
+  display: flex;
+  padding-left: 47px;
+  padding-top: 20px;
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--grey-text);
+  
+  letter-spacing: 0.03em;
+}
+
+.checkbox-span {
+  color: #2196F3;
+  text-decoration: underline;
+}
+
+.end-grup input[type="checkbox"] {
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+} 
 
