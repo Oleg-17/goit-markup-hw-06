@@ -998,6 +998,7 @@ textarea {
   display: flex;
   padding-left: 47px;
   padding-top: 20px;
+ 
   
   font-style: normal;
   font-weight: 400;
@@ -1019,3 +1020,14 @@ textarea {
   margin-right: 8px;
 } 
 
+.iconchek {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border: 2px solid var(--blak-text);
+}
+
+.checkbox:checked + .iconchek {
+  background-color: var(--blu-text);
+  /* background-image: url("../images/icon.svg/iconcheck.svg"); */
+}
