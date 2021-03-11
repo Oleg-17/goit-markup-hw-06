@@ -60,68 +60,60 @@
 
     <main>
         <section class="section-background">
-            <h1 class="section">Эффективные решения <br> для вашего бизнеса</h1>
-            <a class="section-btn btn" data-modal-open>Заказать услугу</a>
+            <h1 class="section">Эффективные решения для вашего бизнеса</h1>
+            <button class="section-btn btn" data-modal-open>Заказать услугу</button>
         </section>
         <section class="list-text-list">
             <div class="container">
                 <h2 class="visually-hidden">Наши преимущества</h2>
                 <ul class="list-item">
                     <li class="list-item-li">
-                        <ul>
-                            <li>
-                                <div class="icon-sum">
-                                    <svg width="70" height="70">
-                                        <use href="./images/icons.svg#antenna-1"></use>
-                                    </svg>
-                                </div>
-                            </li>
-                        </ul>
+
+                        <div class="icon-sum">
+                            <svg width="70" height="70">
+                                <use href="./images/icons.svg#antenna-1"></use>
+                            </svg>
+                        </div>
+
                         <h3 class="list">Внимание к деталям</h3>
                         <p class="list-text">
                             Идейные соображения, а также начало повседневной работы по формированию позиции.
                         </p>
                     </li>
                     <li class="list-item-li">
-                        <ul>
-                            <li>
-                                <div class="icon-sum">
-                                    <svg width="70" height="70">
-                                        <use href="./images/icons.svg#clock-1"></use>
-                                    </svg>
-                                </div>
-                            </li>
-                        </ul>
+
+                        <div class="icon-sum">
+                            <svg width="70" height="70">
+                                <use href="./images/icons.svg#clock-1"></use>
+                            </svg>
+                        </div>
+
                         <h3 class="list">Пунктуальность</h3>
                         <p class="list-text">
                             Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                         </p>
                     </li>
                     <li class="list-item-li">
-                        <ul>
-                            <li>
-                                <div class="icon-sum">
-                                    <svg width="70" height="70">
-                                        <use href="./images/icons.svg#diagram-1"></use>
-                                    </svg>
-                                </div>
-                            </li>
-                        </ul>
+
+                        <div class="icon-sum">
+                            <svg width="70" height="70">
+                                <use href="./images/icons.svg#diagram-1"></use>
+                            </svg>
+                        </div>
+
                         <h3 class="list">Планирование</h3>
                         <p class="list-text">
                             Равным образом консультация с широким активом в значительной степени обуславливает.
                         </p>
                     </li>
                     <li class="list-item-li">
-                        <ul>
-                            <li>
-                                <div class="icon-sum">
-                                    <svg width="70" height="70">
-                                        <use href="./images/icons.svg#astronaut-1"></use>
-                                    </svg>
-                                </div>
-                            </li>
-                        </ul>
+
+                        <div class="icon-sum">
+                            <svg width="70" height="70">
+                                <use href="./images/icons.svg#astronaut-1"></use>
+                            </svg>
+                        </div>
+
                         <h3 class="list">Современные технологии</h3>
                         <p class="list-text">
                             Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -383,7 +375,8 @@
                     <address>
                         <ul>
                             <li class="address"> г. Киев, пр-т Леси Украинки, 26</li>
-                            <li> <a class="mail-nomber-m" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            <li class="address-mail"> <a class="mail-nomber-m"
+                                    href="mailto:info@devstudio.com">info@devstudio.com</a>
                             </li>
                             <li> <a class="mail-nomber" href="tel:+380961111111">+38 096 111 11 11</a></li>
                         </ul>
@@ -460,7 +453,7 @@
                 <div class="grup">
                     <label class="label-grup" for="usermail">Почта</label>
                     <div class="inputblack">
-                        <input class="input" type="text" name="email" id="usermail" />
+                        <input class="input current" type="text" name="email" id="usermail" />
                         <svg width="30" height="30" class="iconblack">
                             <use href="./images/icons.svg#email-blak"></use>
                         </svg>
@@ -471,11 +464,10 @@
                     <textarea class="input" rows="5" placeholder="Введите текст"></textarea>
                 </div>
                 <div class="end-grup">
-
-                    <input type="checkbox" name="" id="chec" />
-                    <span class="iconchek"></span>
-                    <label class="chectext" for="chec">Соглашаюсь с рассылкой и принимаю <span
-                            class="checkbox-span">Условия
+                    <label class="chectext" for="chec">
+                        <input class="checkbox" type="checkbox" name="" id="chec" />
+                        <span class="iconchek"></span>
+                        Соглашаюсь с рассылкой и принимаю <span class="checkbox-span">Условия
                             договора</span></label>
                 </div>
                 <button class="form-submit" type="submit">Отправить</button>
