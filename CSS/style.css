@@ -944,6 +944,7 @@ header.container, {
 }
 
 .modal-form .input {
+  outline: none;
   width: 100%;
   padding: 11px;
   padding-left: 30px;
@@ -954,7 +955,8 @@ header.container, {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form .input:hover{
+.modal-form .input:hover,
+.modal-form .input:focus {
   border-color: var(--blu-text);
 }
 
@@ -962,20 +964,20 @@ header.container, {
   position: relative;
 }
 
-
 .modal-form .iconblack {
   position: absolute;
   top: 50%; 
   left: 12px;
   transform: translateY(-30%);
  
- 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form .input:hover + .iconblack {
+.modal-form .input:hover + .iconblack,
+.modal-form .input:focus + .iconblack {
   fill: var(--blu-text);
 }
+
 
 .modal .modal-form .form-submit {
   margin-top: 30px;
